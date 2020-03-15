@@ -5,7 +5,7 @@ import SwiftUI
 public final class TextView: NSObject, UIViewRepresentable, UITextViewDelegate {
     var text: Binding<String>
 
-    init(text: Binding<String>) {
+    public init(text: Binding<String>) {
         self.text = text
     }
 
