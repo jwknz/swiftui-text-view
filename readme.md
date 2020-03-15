@@ -8,6 +8,9 @@ on each text change.
 
 XCode > File > Swift Packages > Add Package Dependency...
 
+Enter `https://github.com/TomasHubelbauer/swiftui-text-view` and
+instead of version select branch and leave in `master`.
+
 ## Updating
 
 XCode > File > Swift Packages > Update to Latest Package Versions...
