@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-final class TextView: NSObject, UIViewRepresentable, UITextViewDelegate {
+public final class TextView: NSObject, UIViewRepresentable, UITextViewDelegate {
     var text: Binding<String>
 
     init(text: Binding<String>) {
