@@ -9,7 +9,7 @@ public final class TextView: NSObject, UIViewRepresentable, UITextViewDelegate {
         self.text = text
     }
 
-    func makeUIView(context: Context) -> UITextView {
+    public func makeUIView(context: Context) -> UITextView {
         let textView = UITextView()
         textView.layer.borderColor = UIColor.gray.cgColor
         textView.layer.borderWidth = 1
@@ -18,11 +18,11 @@ public final class TextView: NSObject, UIViewRepresentable, UITextViewDelegate {
         return textView
     }
 
-    func updateUIView(_ uiView: UITextView, context: Context) {
+    public func updateUIView(_ uiView: UITextView, context: Context) {
         uiView.text = text.wrappedValue
     }
     
-    func textViewDidChange(_ textView: UITextView) {
+    public func textViewDidChange(_ textView: UITextView) {
         self.text.wrappedValue = textView.text
     }
 }
