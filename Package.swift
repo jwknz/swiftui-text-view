@@ -2,16 +2,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "TextView",
+    name: "SwiftUITextView",
     platforms: [
         .iOS(.v13),
     ],
     products: [
-        .library(name: "TextView", targets: ["TextView"]),
+        .library(name: "SwiftUITextView", targets: ["SwiftUITextView"]),
     ],
     targets: [
         .target(
-            name: "TextView",
+            name: "SwiftUITextView",
             dependencies: []),
     ]
 )
