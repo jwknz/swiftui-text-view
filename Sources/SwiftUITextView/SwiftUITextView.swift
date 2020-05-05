@@ -25,6 +25,15 @@ public final class TextView: NSObject, UIViewRepresentable, UITextViewDelegate {
     public func textViewDidChange(_ textView: UITextView) {
         self.text.wrappedValue = textView.text
     }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField.text! == "" {
+            return false
+        } else {
+            textField.resignFirstResponder()
+            return true
+        }
+    }
 }
 
 #endif
